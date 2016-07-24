@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memo.textview.MainActivity" >
+    
+<!-- autoLink 让文本自动识别特殊格式 
+	 textIsSelectable 让文本可以选择(如复制)
+		-->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:autoLink="all"
+        android:textIsSelectable="true"
+        android:text="@string/hello_world"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:background="#ff0000"
+        android:text="Web"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnWeb"
+        android:background="#00ff00"
+        android:text="Phone"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPhone"
+        android:background="#0000ff"
+        android:text="Email"
+        android:textSize="15sp" />
+
+    <EditText 
+        android:id="@+id/etCopy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/btnEmail"
+        android:background="#ffff00"
+        />
+</RelativeLayout>
